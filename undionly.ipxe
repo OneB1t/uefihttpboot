@@ -1,0 +1,10 @@
+#!ipxe
+  
+kernel http://10.0.10.1/wimboot
+initrd http://10.0.10.1/UEFI/install.bat                 install.bat
+initrd http://10.0.10.1/UEFI/diskpart.script             diskpart.script
+initrd http://10.0.10.1/UEFI/winpeshl.ini                winpeshl.ini
+initrd http://10.0.10.1/UEFI/BCD                         BCD
+initrd http://10.0.10.1/UEFI/boot.sdi                    boot.sdi
+initrd http://10.0.10.1/UEFI/boot.wim                    boot.wim
+boot
