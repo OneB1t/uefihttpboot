@@ -1,5 +1,5 @@
 # uefihttpboot
-Way to install .wim images under UEFI for HTTP with iPXE/wimboot/winPE. Created for network deployment of new computers with UEFI 2.5 and higher because WDS does not have that option yet.
+Way to install windows 10 .wim images under UEFI for HTTP with iPXE/wimboot/winPE. Created for network deployment of new computers with UEFI 2.5 and higher because WDS does not have that option yet.
 It will deploy any install.wim image with unatended.xml.
 
 Expect turbulences this is far from finished generic way to deploy.
