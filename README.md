@@ -21,14 +21,14 @@ Expect turbulences this is far from finished generic way to deploy.
 7. observe results with wireshark and in case that something is wrong 
 
 # How it works
-1. system will download ipxe.efi from http endpoint and boot from it
+1. computer with UEFI HTTP boot option will download ipxe.efi from HTTP endpoint and boot from it
 2. ipxe will then download script undionly.ipxe and execute whats inside it
 3. this will download boot.wim and other required parts (winpeshl.ini, install.bat) for WinPE to boot
 4. WinPE then execute install.bat which does following
-  a. repartition HDD/SSD to prepare it for install
-  b. use dism.exe to unpack install.wim to HDD/SSD windows partition
-  c. run bcdboot to create boot information
-  d. restart
+  - repartition HDD/SSD to prepare it for install
+  - use dism.exe to unpack install.wim to HDD/SSD windows partition
+  - run bcdboot to create boot information
+  - restart
   
 # License
 There are binaries from microsoft and ipxe on this repository, all rights to their corresponding owners
